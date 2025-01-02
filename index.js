@@ -7,6 +7,7 @@ function createWindow(url, title, width, height, zoomFactor) {
     useContentSize: true,
     webPreferences: {
       zoomFactor: zoomFactor || 1.0,
+    }
   });
 
   mainWindow.setTitle(title);
