@@ -19,7 +19,7 @@ function createWindow(url, title, width, height, zoomFactor) {
 }
 
 app.whenReady().then(() => {
-  createWindow('https://poloniex.com/ja/futures/trade/BTCUSDTPERP', "Poloniex", 1600, 800);
+  createWindow('https://poloniex.com/ja/futures/trade/BTCUSDTPERP', "Poloniex", 1600, 800, 1,0);
 
   // Mac でDockアイコンをクリックして再度起動する場合に対応する例
   app.on('activate', () => {
