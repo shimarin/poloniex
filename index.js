@@ -1,10 +1,12 @@
 const { app, BrowserWindow } = require('electron');
 
-function createWindow(url, title, width, height) {
+function createWindow(url, title, width, height, zoomFactor) {
   const mainWindow = new BrowserWindow({
     width: width,
     height: height,
     useContentSize: true,
+    webPreferences: {
+      zoomFactor: zoomFactor || 1.0,
   });
 
   mainWindow.setTitle(title);
